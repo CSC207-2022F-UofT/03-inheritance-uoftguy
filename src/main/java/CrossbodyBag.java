@@ -1,3 +1,49 @@
+
+
+
+
+public class CrossbodyBag extends Bag{
+
+    public int numberOfStraps;
+
+    /**
+     * Creates a new CrossbodyBag with the given color and
+     * capacity.
+     *
+     * @param bagColor
+     * @param bagCapacity
+     */
+
+    public CrossbodyBag(String bagColor, int bagCapacity, int straps) {
+        super(bagColor, bagCapacity);
+        this.numberOfStraps = straps;
+
+    }
+
+    @Override
+    public void enhance() {
+        /* TOD: Implement this method.
+         *       You may want to use the increaseCapacity() method that was
+         *       implemented in Bag.
+         *
+         * To call a method defined in a parent, you use super.method_name(...)
+         */
+        super.increaseCapacity(2);
+    }
+
+    public int getNumberOfStraps() {
+        return this.numberOfStraps;
+    }
+
+    @Override
+    public String toString() {
+        return this.getColor() + " Crossbody Bag with " + this.numberOfStraps + " straps (" +
+                this.getNumberOfContents() + " / " + this.getCapacity() + ")";
+    }
+
+}
+
+
 /*
  * This file is currently empty, but with a variety of TODOs to implement.
  * You may want to refer to HandBag.java to see how to structure your code.
@@ -7,7 +53,7 @@
  */
 
 /*
- * TODO: Create a public class named CrossbodyBag which is a subclass of Bag
+ * TOD: Create a public class named CrossbodyBag which is a subclass of Bag
  *       In addition to the attributes in Bag, the CrossbodyBag should have an
  *       attribute named "numberOfStraps".
  *
@@ -30,3 +76,5 @@
  *
  *       See the tests in test/CrossBodyBagTest.java for examples.
  */
+
+
