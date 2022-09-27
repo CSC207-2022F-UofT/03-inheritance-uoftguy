@@ -34,7 +34,7 @@ public abstract class Bag {
         this.color = bagColor;
         this.capacity = bagCapacity;
         this.numberOfContents = 0;
-        this.contents = new String[0];
+        this.contents = new String[bagCapacity];
         // new ArrayList<String>();
         //Could have also used ArrayList, look it up
     }
